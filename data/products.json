@@ -1,0 +1,38 @@
+[
+    {
+        "id": "3",
+        "title": "Cannon EOS 80D DSLR Camera",
+        "description": "Characterized by versatile imaging specs, the Canon EOS 80D further clarifies itself using a pair of robust focusing systems and an intuitive design",
+        "price": 929.99
+    },
+    {
+        "id": "4",
+        "title": "Sony Playstation 4 Pro White Version",
+        "description": "The ultimate home entertainment center starts with PlayStation. Whether you are into gaming, HD movies, television, music",
+        "price": 399.99
+    },
+    {
+        "id": "5",
+        "title": "Logitech G-Series Gaming Mouse",
+        "description": "Get a better handle on your games with this Logitech LIGHTSYNC gaming mouse. The six programmable buttons allow customization for a smooth playing experience",
+        "price": 49.99
+    },
+    {
+        "id": "76e47990-7e49-4462-a499-12ff0fac4feb",
+        "title": "Test Product",
+        "description": "This is my product",
+        "price": 100
+    },
+    {
+        "id": "c62e9af2-6877-4497-96b1-456c5dbd22ac",
+        "title": "Asus TUF f15",
+        "description": "i7-12650 RTX3050Ti 16G 512SSD ",
+        "price": 4200
+    },
+    {
+        "id": "fecba428-c10b-4247-9ef4-476ca9166a9b",
+        "title": "Asus TUF f15",
+        "description": "i7-12650 RTX3050Ti 16G 512SSD ",
+        "price": 4200
+    }
+]
