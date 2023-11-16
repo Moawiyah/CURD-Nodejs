@@ -1,11 +1,22 @@
 const http = require('http');
 const fs = require('fs');
 const { getProducts, getProduct, createProduct, updateProduct, removeProduct } = require('./controllers/productController');
-
+const { getUser } = require('./controllers/auth.controller');
 
 const server = http.createServer((req, res) => {
+    if (req.url === '/' && req.method === 'GET') {
+        fs.readFile('./view/index.html', null, function (error, data) {
+            if (error) {
+                res.writeHead(404);
+                res.end('Whoops! File not found!');
+            } else {
+                res.end(data);
+            }
+        });
+    } else if (req.url === '/home' && req.method === 'POST') {
 
-    if (req.url === '/api/products' && req.method === 'GET') {
+        getUser(req, res);
+    } else if (req.url === '/api/products' && req.method === 'GET') {
         getProducts(req, res)
     } else if (req.url.match(/\/api\/products\/([0-9]+)/) && req.method === 'GET') {
         const id = req.url.split('/')[3]; //api/products/1
